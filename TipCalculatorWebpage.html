@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>Tip Calculator</title>
+		<link rel="stylesheet" type="text/css" href="TipCalculatorStyling.css">
+	</head>
+	<body style="background-image: url('backgroundImage.jpg'); background-size: 90% 90%;">
+		<div id="container">
+				<h1 id="blockHeading">TIP CALCULATOR</h1>
+			<div>
+			<form style="margin-left:20px;">
+				<p style="margin-top:20px;"> How much is your <strong>bill						</strong>?
+				</p>
+				<p><strong>Rs.</strong>
+					<input type="text" id="bill" placeholder="Bill Amount">
+				</p>
+				<p>How was your service?</p>
+				<select style="margin-left:40px;width: 290px;height: 50px; padding: 10px 20px 10px 25px; font-size: 22px;opacity: 0.7;border-width: 2px" id="serviceType">
+					<option disabled selected value="0">-- Choose an Option --</option> 
+					<option value="0.15"> 15% - <strong>Outstanding</strong></option>
+					<option value="0.10"> 10% - <strong>Good</strong></option>
+					<option value="0.05"> 5% - <strong>It was OK</strong></option>
+				</select>
+				<p>How many People are sharing this Bill?</p>
+				<input style="margin-left: 20px" type="number" id="people" min="1" max="20" placeholder="Number of People"><strong style="margin-left:10px;font-size: 22px;font-weight: bolder;">People</strong>
+				<p></p>
+				</form>
+				<button id="calculate" type="button"><strong>CALCULATE!</strong>
+				</button>
+			</div>
+		<div id="resultBlock">
+			<h1 style="text-align: center;background: #0861E2;color: white;margin-top: 0;padding-top: 
+			5px;padding-bottom: 5px">TIP AMOUNT</h1>
+			<p style="margin-top: 0;margin-left: 20px;font-size: 22px">to pay -<strong style="opacity: 0.8;font-size: 30px" id="tipAmount">&nbsp;&nbsp;Rs. 20</strong><br><span style="font-size: 24px;margin-left: 155px;font-weight: bold;margin-top: 0px">each</span></p>
+		</div>
+		</div>	
+		<script type="text/javascript" src="TipCalculatorWorking.js">
+		</script>
+
+	</body>
+</html>
